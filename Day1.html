@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="num1" />
+    <br />
+    <br />
+    <input type="number" id="num2" />
+    <br />
+    <button onclick="mynumber1()">Add+</button>
+    <button onclick="mynumber2()">sub-</button>
+
+    <p id="show" style="text-align: center; font-size: 30px; font-weight: 600; color: red;"></p>
+
+    <script>
+      function mynumber1() {
+        let number1 = parseFloat(document.getElementById("num1").value);
+        let number2 = parseFloat(document.getElementById("num2").value);
+        let show = document.getElementById("show");
+        let sum = number1 + number2;
+        show.innerHTML = sum;
+        
+      }
+
+      function mynumber2() {
+        let number1 = parseFloat(document.getElementById("num1").value);
+        let number2 = parseFloat(document.getElementById("num2").value);
+        let show = document.getElementById("show");
+
+        let sum1 = number1 - number2;
+        show.innerHTML = sum1;
+      }
+    </script>
+  </body>
+</html>
